@@ -1,15 +1,25 @@
-let split = new SplitText('h1');
-console.log(split);
+gsap.to('.box1', {
+	x: 2000,
 
-let tl = gsap.timeline({
 	scrollTrigger: {
-		trigger: '#sec2',
+		trigger: '.box1',
 		start: 'top 50%',
 		end: 'top 0%',
+		scrub: 1,
 		markers: true,
-		toggleActions: 'restart pause reverse reset',
+		id: 'box1',
 	},
 });
 
-tl.from(split.chars, { scale: 2, opacity: 0, stagger: 0.1 });
-tl.from('button', { x: 500, opacity: 0 });
+gsap.to('.box2', {
+	x: 4000,
+
+	scrollTrigger: {
+		trigger: '.box1',
+		start: 'top 50%',
+		end: 'top 0%',
+		scrub: 1,
+		markers: true,
+		id: 'box2',
+	},
+});
