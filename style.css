@@ -1,30 +1,45 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 ul,
 ol,
 li {
-  list-style: none;
+	list-style: none;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .wrap {
-  width: 1000px;
-  height: 700px;
-  border: 1px solid #888;
-  margin: 100px auto;
-  position: relative;
+	width: 1000px;
+	height: 700px;
+	border: 1px solid #888;
+	margin: 100px auto;
+	position: relative;
+}
+.wrap > div {
+	opacity: 0;
+	width: 100px;
+	height: 100px;
 }
 .wrap .box {
-  width: 100px;
-  height: 100px;
-  background: aqua;
+	background: aqua;
+}
+.wrap .box2 {
+	background: hotpink;
+}
+.wrap .box3 {
+	background: orange;
+}
+.wrap .box4 {
+	background: lightgreen;
+}
+.wrap .box5 {
+	background: coral;
 }
 
 /*# sourceMappingURL=style.css.map */
